@@ -123,7 +123,7 @@ All steps will be completed within your lab virtual machine. If you require assi
 
 ### Task 1: Create the Azure Migrate project and add assessment and migration tools
 
-In this task, you will create the Azure Migrate project and select the assessment and migration tools.
+In this task, you will create the Azure Migrate project and select the assessment and migration tools. Perform 
 
 > **Note**: In this lab, you will use the Microsoft-provided assessment and migration tools within Azure Migrate. A number of third-party tools are also integrated with Azure Migrate for both assessment and migration. You may wish to spend some time exploring these third-party options outside of this lab.
 
