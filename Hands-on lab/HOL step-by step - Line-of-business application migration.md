@@ -1,5 +1,7 @@
 Catapult Systems Azure Immersion Workshop - Infrastructure Migration
 
+![Catapult Systems](https://github.com/dvanderslice/MCW-Line-of-business-application-migration/blob/master/Hands-on%20lab/images/cata.png)
+
 
 
 ![Microsoft Cloud Workshops](https://github.com/Microsoft/MCW-Template-Cloud-Workshop/raw/master/Media/ms-cloud-workshop.png "Microsoft Cloud Workshops")
@@ -35,8 +37,6 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
   - [Abstract and learning objectives](#abstract-and-learning-objectives)
   - [Overview](#overview)
   - [Solution architecture](#solution-architecture)
-  - [Requirements](#requirements)
-  - [Before the hands-on lab](#before-the-hands-on-lab)
   - [Exercise 1: Discover and assess the on-premises environment](#exercise-1-discover-and-assess-the-on-premises-environment)
     - [Task 1: Create the Azure Migrate project and add assessment and migration tools](#task-1-create-the-azure-migrate-project-and-add-assessment-and-migration-tools)
     - [Task 2: Deploy the Azure Migrate appliance](#task-2-deploy-the-azure-migrate-appliance)
@@ -109,6 +109,22 @@ The SQL Server database will be assessed by installing the Microsoft Data Migrat
 The application, web, and web proxy tiers will be migrated to Azure VMs using Azure Migrate: Server Migration. You will walk through the steps of building the Azure environment, replicating data to Azure, customizing VM settings, and performing a failover to migrate the application to Azure.
 
 > **Note**: After migration, the application could be modernized to use Azure Application Gateway instead of the Ubuntu Nginx VM, and to use Azure App Service to host both the web tier and application tiers. These optimizations are out of scope of this lab, which is focused only on a 'lift and shift' migration to Azure VMs.
+
+## Requirements -
+Microsoft provides a Hands on Lab environment provided by Spectra for the Hands On Lab materials. To register for the lab:
+
+1. Visit https://bit.ly/3atZBjz to Register
+2. The Activation Code Will Be Posted to the Chat During the Break
+3. The lab can take up to 60 Minutes to Provision. If there is an issue with provisioning you will still be able to access your lab, by utilizing the automated email with your lab details.
+
+Example Lab Details Email
+![](https://github.com/dvanderslice/MCW-Line-of-business-application-migration/blob/master/Hands-on%20lab/images/2021-02-16%2016_41_14-Window.png)
+
+The smarthotelhost DNS Name can be directly accessed via RDP with the username and password provided by the email if needed. 
+
+4. All of the lab material is ideally asked through the SmartHotelHost Hands on Lab machine provisioned for you. You should not need to use your local machine to visit the Azure portal.
+5. Any support required please direct your attention to the Microsoft Teams meeting chat for links provided on how to obtain support and relevant details.
+
 
 ## Exercise 1: Discover and assess the on-premises environment
 
