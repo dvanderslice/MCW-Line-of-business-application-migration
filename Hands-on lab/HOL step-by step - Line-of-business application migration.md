@@ -37,6 +37,7 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
   - [Abstract and learning objectives](#abstract-and-learning-objectives)
   - [Overview](#overview)
   - [Solution architecture](#solution-architecture)
+  - [Requirements -](#requirements)
   - [Exercise 1: Discover and assess the on-premises environment](#exercise-1-discover-and-assess-the-on-premises-environment)
     - [Task 1: Create the Azure Migrate project and add assessment and migration tools](#task-1-create-the-azure-migrate-project-and-add-assessment-and-migration-tools)
     - [Task 2: Deploy the Azure Migrate appliance](#task-2-deploy-the-azure-migrate-appliance)
@@ -110,12 +111,15 @@ The application, web, and web proxy tiers will be migrated to Azure VMs using Az
 
 > **Note**: After migration, the application could be modernized to use Azure Application Gateway instead of the Ubuntu Nginx VM, and to use Azure App Service to host both the web tier and application tiers. These optimizations are out of scope of this lab, which is focused only on a 'lift and shift' migration to Azure VMs.
 
-## Requirements -
-Microsoft provides a Hands on Lab environment provided by Spectra for the Hands On Lab materials. To register for the lab:
+## Requirements
+Microsoft provides a Hands on Lab environment provided by Spectra for the Hands On Lab materials. 
+
+To register for the lab:
 
 1. Visit https://bit.ly/3atZBjz to Register
 2. The Activation Code Will Be Posted to the Chat During the Break
-3. The lab can take up to 60 Minutes to Provision. If there is an issue with provisioning you will still be able to access your lab, by utilizing the automated email with your lab details.
+3. The lab can take up to 60 Minutes to Provision. Provisioning Time Will Be Dependent On the Number of Requests.
+4. If there is an issue with provisioning you will still be able to access your lab, by utilizing the automated email with your lab details.
 
 Example Lab Details Email
 ![](https://github.com/dvanderslice/MCW-Line-of-business-application-migration/blob/master/Hands-on%20lab/images/2021-02-16%2016_41_14-Window.png)
@@ -124,8 +128,9 @@ The smarthotelhost DNS Name can be directly accessed via RDP with the username a
 
 4. All of the lab material is ideally asked through the SmartHotelHost Hands on Lab machine provisioned for you. You should not need to use your local machine to visit the Azure portal.
 5. Any support required please direct your attention to the Microsoft Teams meeting chat for links provided on how to obtain support and relevant details.
+6. The lab is valid for 8 hours from the time of provisioning.
 
-
+> **Note**: I will walk through the lab material as the instructor for those that would rather watch the process. That way you are able to take advantage of the content.
 ## Exercise 1: Discover and assess the on-premises environment
 
 Duration: 60 minutes
