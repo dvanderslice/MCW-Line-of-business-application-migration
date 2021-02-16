@@ -37,7 +37,7 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
   - [Abstract and learning objectives](#abstract-and-learning-objectives)
   - [Overview](#overview)
   - [Solution architecture](#solution-architecture)
-  - [Requirements -](#requirements)
+  - [Requirements](#requirements)
   - [Exercise 1: Discover and assess the on-premises environment](#exercise-1-discover-and-assess-the-on-premises-environment)
     - [Task 1: Create the Azure Migrate project and add assessment and migration tools](#task-1-create-the-azure-migrate-project-and-add-assessment-and-migration-tools)
     - [Task 2: Deploy the Azure Migrate appliance](#task-2-deploy-the-azure-migrate-appliance)
@@ -112,23 +112,32 @@ The application, web, and web proxy tiers will be migrated to Azure VMs using Az
 > **Note**: After migration, the application could be modernized to use Azure Application Gateway instead of the Ubuntu Nginx VM, and to use Azure App Service to host both the web tier and application tiers. These optimizations are out of scope of this lab, which is focused only on a 'lift and shift' migration to Azure VMs.
 
 ## Requirements
-Microsoft provides a Hands on Lab environment provided by Spectra for the Hands On Lab materials. 
+Microsoft provides a Hands on Lab environment provided by Spectra for the Hands On Lab materials. The materials include all of the infrastructure required. 
+> **Note**: The lab (if successfully provisioned) will run within a single browser tab with information about your provisioned lab infrastructure, usernames and passwords and a breakdown of the lab environment. Most importantly a browser based session to your machine will be available. This is where you will perform the tasks, not on your local machine.
 
 To register for the lab:
 
 1. Visit https://bit.ly/3atZBjz to Register
 2. The Activation Code Will Be Posted to the Chat During the Break
-3. The lab can take up to 60 Minutes to Provision. Provisioning Time Will Be Dependent On the Number of Requests.
-4. If there is an issue with provisioning you will still be able to access your lab, by utilizing the automated email with your lab details.
+3. The lab can take up to 60 Minutes to Provision. Provisioning Time Will Be Dependent On the Number of Lab Requests.
+4. You will receive an automated email with the specifics about your lab. You do not need to login to Azure on your machine with these credentials.
 
-Example Lab Details Email
 ![](https://github.com/dvanderslice/MCW-Line-of-business-application-migration/blob/master/Hands-on%20lab/images/2021-02-16%2016_41_14-Window.png)
+Example Lab Details Email
+> **Note** Although it is strongly suggested you remain within the Spectra hosted lab environment, if an issue with provisioning occurs there is an alternative way to access the lab. See Requirements step #9 for instructions.
 
-The smarthotelhost DNS Name can be directly accessed via RDP with the username and password provided by the email if needed. 
-
-4. All of the lab material is ideally asked through the SmartHotelHost Hands on Lab machine provisioned for you. You should not need to use your local machine to visit the Azure portal.
-5. Any support required please direct your attention to the Microsoft Teams meeting chat for links provided on how to obtain support and relevant details.
-6. The lab is valid for 8 hours from the time of provisioning.
+1. All of the lab material is ideally accessed through the SmartHotelHost Hands on Lab machine provisioned for you. You should not need to use your local machine to visit the Azure portal.
+2. If your lab environment is provisioned, you will have two options to connect to your virtual machine directly through the lab portal. This will be demonstrated during the Hands on Lab session.
+3. The desktop of the lab virtual machine contains a text document with your username and password for the Azure Portal, a direct link to the Azure portal and contains all of the Hyper-V machines required for the lab.
+   > **Note**: If no machines are currently running in Hyper-V please wait for the provisioning to complete. You will not need these machines until later in the lab.
+4. Any support required please direct your attention to the Microsoft Teams meeting chat for links provided on how to obtain support and relevant details.
+5. The lab is valid for 8 hours from the time of provisioning.
+6. If the lab provisioning fails or is not finished in time, there is an alternative way to access the lab virtual machine. By utilizing the SmartHotelHost DNS Name in a remote desktop session from your machine.
+   1. On Windows -
+      1. Start
+      2. Type - Remote Desktop Connection
+      3. Paste the SmartHotelHost DNS Name in the Computer field
+      4. Use the SmartHotelHost Admin Username and Password when prompted.
 
 > **Note**: I will walk through the lab material as the instructor for those that would rather watch the process. That way you are able to take advantage of the content.
 ## Exercise 1: Discover and assess the on-premises environment
